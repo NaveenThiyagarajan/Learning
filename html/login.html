@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<script type="text/javascript">
+		function validateLogin(){
+			let uName = document.getElementById("username").value;
+			let pWord = document.getElementById("password").value;
+			if(!uName || !pWord){
+				alert('Please enter value for both Username and Password');
+				return false;
+			}
+			else{
+				let text = "<br>Username: " + uName + "<br>Password: " + pWord;
+				const passwordRegex = RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@_#\$%\^&\*])(?=.{8,})/);
+				const passStart = RegExp(/^[a-zA-Z0-9_]/);
+				const emailRegex = RegExp(/^[a-zA-Z0-9.]{3,}@[a-zA-Z0-9]{2,}.[a-zA-Z]{3,}$/);
+				if(pWord.length < 8){
+					text = "<strong style=\"color: red;\">Password should have atleast 8 characters!!!</strong>";
+				}
+				if(!passStart.test(pWord) || !passwordRegex.test(pWord)){
+					text = "<strong style=\"color: red;\">Password does not match the condition!!! Password: " + pWord+"</strong>";
+				}
+				if(!emailRegex.test(uName)){
+					text = "<strong style=\"color: red;\">Username does not match the condition!!!</strong>";
+				}
+				document.getElementById("result").innerHTML = text;
+			}
+		}
+	</script>
+</head>
+<body style="background-color: lightgrey">
+<h1 style="text-align: center;">Login</h1>
+<hr>
+<a href="./home.html">
+	<button style="background-color:rgb(180, 180, 180); padding: 5px; border-radius: 4px; font-size: 14px;">Home</button>
+</a>
+<br>
+<br>
+<div style="box-sizing: border-box; width: 300px; padding: 25px; margin: auto; background-color: darkgrey">
+	<input style="width: 200px; height: 25px" id="username" type="text" name="Username" placeholder="Username"><br>
+	<input style="width: 200px; height: 25px" id="password" type="Password" name="Password" placeholder="Password"><br>
+	<input style="width: 100px; height: 50px" type="submit" name="Submit" onclick="validateLogin()">
+	<a href="./signup.html">
+		<button>signup</button>
+	</a>
+	<p id="result">
+	</p>
+</div>
+</body>
+</html>
