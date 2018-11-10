@@ -19,10 +19,10 @@
 					text = "<strong style=\"color: red;\">Password should have atleast 8 characters!!!</strong>";
 				}
 				if(!passStart.test(pWord) || !passwordRegex.test(pWord)){
-					text = "<strong style=\"color: red;\">Password does not match the condition!!! Password: " + pWord+"</strong>";
+					text = "<strong style=\"color: red;\">Please enter a valid password!!!</strong>";
 				}
 				if(!emailRegex.test(uName)){
-					text = "<strong style=\"color: red;\">Username does not match the condition!!!</strong>";
+					text = "<strong style=\"color: red;\">Please enter a valid username!!!</strong>";
 				}
 				document.getElementById("result").innerHTML = text;
 			}
