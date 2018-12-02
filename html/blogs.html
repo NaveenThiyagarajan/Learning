@@ -2,32 +2,73 @@
 <html>
 <head>
 	<title>Blogs</title>
+	<link rel="stylesheet" href="./../css/blogs.css"/>
 	<style type="text/css">
-		.blogTitle{
-			width: 45%;
-			box-sizing: border-box;
-			margin: auto;
-			background-color: white;
-			opacity: 0.8;
-			padding: 5px;
+		body{
+			background-color: lightgray;
 		}
-		.blogTitle:hover{
-			opacity: 1.0;
+		h1{
+			text-align: center;
 		}
 	</style>
 </head>
-<body style="background-color: lightgrey">
-<h1 style="text-align: center;">Blogs</h1>
+<body>
+<!-- <h1>Blogs</h1>
 <hr>
 <a href="./home.html">
-	<button style="background-color:rgb(180, 180, 180); padding: 5px; border-radius: 4px; font-size: 14px;">Home</button>
-</a>
-<p>This were my blogs are going to be.</p>
-<div class="blogTitle">
-	<span>
-		<img src="./7image.jpg" width="20" height="15">
-	</span>
-	<span>This is blog</span>
+	<button class="homeBtn">Home</button>
+</a> -->
+
+<div id="complete_page">
+	
+	<header>
+		<h1>Blogs</h1>
+		<hr>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="./home.html">Home</a></li>
+			<li>
+					<a href="blogs.html">Blogs</a>
+				</li>
+			<li>
+				<a href="about_me.html">Aboutus</a>
+			</li>
+			<li class="lastOne">
+					<a href="login.html">Login</a>
+				</li>
+		</ul>
+	</nav>
+	<div id="main_section">
+		<div id="articles_section">
+			<section id="article">
+				<header> This is the title of articel 1111</header>
+				<p>Description: This contains so many items and it can have more date as well so just we need to adjust the height accordingly.</p>
+				<footer>
+					<p>-Naveen.</p>
+				</footer>
+			</section>
+			<section id="article">
+					<header> <p>This is the title of articel 1111</p></header>
+					<p>Description: This contains so many items and it can have more date as well so just we need to adjust the height accordingly. many items and it can have more date as well so just we need to adjust the height accordingly.</p>
+					<footer>
+						<p>-Naveen.</p>
+					</footer>
+			</section>
+		</div>
+
+		<div id="news_section">
+			<section id="news">
+					this is some news that i need to post every day
+			</section>
+		</div>
+	</div>
+
+	<footer>
+		CopyRight by Naveen
+	</footer>
 </div>
+
 </body>
 </html>

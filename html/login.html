@@ -2,6 +2,12 @@
 <html>
 <head>
 	<title>Login Page</title>
+	<link rel="stylesheet" href="./../css/common.css"/>
+	<style>
+		h1{
+			text-align: center;
+		}
+	</style>
 	<script type="text/javascript">
 		function validateLogin(){
 			let uName = document.getElementById("username").value;
@@ -29,21 +35,38 @@
 		}
 	</script>
 </head>
-<body style="background-color: lightgrey;">
-<h1 style="text-align: center;">Login</h1>
-<hr>
-<a href="./home.html"><button style="background-color:rgb(180, 180, 180); padding: 5px; border-radius: 4px; font-size: 14px;">Home</button></a>
-<br>
-<br>
-<div style="border: 1px solid; width: 250px; padding: 25px; margin: auto; background-color: darkgrey">
-	<input style="width: 200px; height: 25px" id="username" type="text" name="Username" placeholder="Username"><br><br>
-	<input style="width: 200px; height: 25px" id="password" type="Password" name="Password" placeholder="Password"><br><br>
-	<input style="border: 1px ridge; width: 100px; background-color: lightblue;" type="submit" name="Submit" onclick="validateLogin()">
-	<a href="./signup.html">
-		<button style="border: 1px ridge whitesmoke; width: 100px; background-color: lightblue;">Signup</button>
-	</a>
-	<p id="result">
-	</p>
-</div>
+<body>
+		<div id="complete_page">
+				<header>
+					<h1>Login</h1>
+					<hr>
+				</header>
+		
+				<nav>
+					<ul>
+							<li>
+									<a href="home.html">Home</a>
+								</li>
+								<li>
+										<a href="blogs.html">Blogs</a>
+									</li>
+								<li>
+									<a href="about_me.html">Aboutus</a>
+								</li>
+					</ul>
+				</nav>
+
+				<div id="main_section">
+					<div style="border: 1px solid; width: 250px; padding: 25px; margin: auto; background-color: darkgrey">
+						<input style="width: 200px; height: 25px" id="username" type="text" name="Username" placeholder="Username"><br><br>
+						<input style="width: 200px; height: 25px" id="password" type="Password" name="Password" placeholder="Password"><br><br>
+						<input style="border: 1px ridge; width: 100px; background-color: lightblue;" type="submit" name="Submit" onclick="validateLogin()">
+						<a href="./signup.html">
+							<button style="border: 1px ridge whitesmoke; width: 100px; background-color: lightblue;">Signup</button>
+						</a>
+						<p id="result">
+						</p>
+					</div>
+				</div>
 </body>
 </html>

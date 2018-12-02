@@ -3,16 +3,44 @@
 <html>
 <head>
 	<title>First Page</title>
+	<link rel="stylesheet" href="./../css/common.css"/>
+	<style>
+		h1{
+			text-align: center;
+		}
+	</style>
 </head>
-<body style="background-color: lightgrey">
-	<a href="./login.html">
-		<button style="border-radius: 5px; background-color: darkgrey; padding: 5px; padding-right: 10px; padding-left: 10px; font-size: 14px;">Login</button>
-	</a>
-<h1 style="text-align: center;">Home</h1>
-<hr>
-<ul>
-	<li><a href="./blogs.html">Blogs</a></li>
-	<li><a href="./about_me.html">About me</a></li>
-</ul>
+<body>
+
+	<div id="complete_page">
+		<header>
+			<h1>Home</h1>
+			<hr>
+		</header>
+
+		<nav>
+			<ul>
+					<li>
+							<a href="home.html">Home</a>
+						</li>
+						<li>
+								<a href="blogs.html">Blogs</a>
+							</li>
+						<li>
+							<a href="about_me.html">Aboutus</a>
+						</li>
+						<li class="lastOne">
+								<a href="login.html">Login</a>
+							</li>
+			</ul>
+		</nav>
+		<div id="#main_section">
+			<p>
+				Welcome to my first study page!!!	
+			</p>
+
+		</div>
+
+	</div>
 </body>
 </html>

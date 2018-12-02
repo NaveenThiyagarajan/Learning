@@ -7,6 +7,7 @@ function signup() {
 	const emailRegex = RegExp(/^[a-zA-Z0-9.]{3,}@[a-zA-Z0-9]{2,}.[a-zA-Z]{3,}$/);
 	let text = '<strong style="color: green;">Success!!</strong>'
 
+	console.log('Fname: ' + fName);
 	if(password !== confirmPassword){
 		text =  '<strong style="color: red;">Make sure both password matches!!</strong>'
 	}

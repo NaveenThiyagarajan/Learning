@@ -2,54 +2,70 @@
 <html>
 <head>
 	<title>Sign Up</title>
-	<style type="text/css">
-		.formBody{
-			margin: auto;
-			box-sizing: border-box;
-			background-color: darkgrey;
-			padding-left: 10px;
-			padding-bottom: 10px;
-			padding-right: 10px;
-			padding-top: 10px;
-			margin-top: 10px;
-			width: 40%;
-		}
-		input[type="text"], input[type="Password"]{
-			border: 1px ridge gray;
-			width: 450px;
-			height: 25px;
-			background-color: whitesmoke;
-		}
-		label{
-			font-weight: bold;
-			display: block;
-			padding-top: 15px;
-		}
-		.formSubmit{
-			border: none;
-			width: 100%;
-			height: 30px;
-			background-color: green;
-			cursor: pointer;
-			opacity: 0.8;
-			font-size: 18px;
-		}
-		.formSubmit:hover {
-			opacity: 1;
+	<link rel="stylesheet" href="./../css/signup.css"/>
+	<script src="./../js/signup.js"></script>
+	<style>
+		h1{
+			text-align: center;
 		}
 	</style>
-	<script src="../js/signup.js"></script>
 </head>
-<body style="background-color: lightgrey">
-<h1 style="text-align: center;">SignUp</h1>
+<body>
+
+	<div id="complete_page">
+		<header>
+			<h1>Signup</h1>
+			<hr>
+		</header>
+
+		<nav>
+			<ul>
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+				<li>
+					<a href="about_me.html">Aboutus</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="main_section">
+			<section id="signup">
+					<form>
+							FirstName: <input type="text" name="firstName"/>
+							LastName: <input type="text" name="lastName"/>
+							Email: <input type="text" name="email_id"/>
+							<button id="signup_button">Signup</button>
+					</form>
+			</section>
+			<section id="SignIn">
+				<p>Already Registered! <span>
+					<a href="login.html">
+						SignIn
+					</a>
+				</span></p>
+			</section>
+		</div>
+
+		<footer>
+			<p>copyright by naveen</p>
+		</footer>
+
+	</div>
+
+
+
+
+
+
+<!-- <h1 style="text-align: center;">SignUp</h1>
 <hr>
 <a href="./home.html">
 	<button style="background-color:rgb(180, 180, 180); padding: 5px; border-radius: 4px; font-size: 14px;">Home</button>
 </a>
 <div class="formBody">
 	<form>
-		FirstName: <input type="text" name="FirstName"/> 
-		<!-- <label>FirstName:</label>
+		<label>FirstName:</label>
 		<input type="text" name="FirstName" required>
 		<label>LastName:</label>
 		<input type="text" name="LastName">
@@ -59,15 +75,15 @@
 		<input type="Password" name="Password" required>
 		<label>Confirm Password:</label>
 		<input type="Password" name="ConfirmPassword" required><br><br>
-		<input class="formSubmit" type="Submit" name="Submit"> -->
 		<input class="formSubmit" type="Submit" name="Submit">
-		<p id="status">
+		<input class="formSubmit" type="Submit" name="Submit" onclick="signup()"> -->
+		<!-- <p id="status">
 			
 		</p>
 	</form>
 </div>
 <p style="text-align: center;">
 	If you have acoount, please <a href="./login.html">SignIn</a>
-</p>
+</p> -->
 </body>
 </html>

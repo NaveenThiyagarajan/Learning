@@ -3,7 +3,6 @@
     padding: 0px;
     font-size: 14px;
 }
-
 h1{
     font-size: 30px;
 }
@@ -14,12 +13,10 @@ header, section, nav, footer{
     display: block;
 }
 body{
-    background-color: lightgray;
     width: 100%;
     display: -webkit-box;
-    -webkit-box-pack: center
+    -webkit-box-pack: center;
 }
-
 #complete_page{
     max-width: 1000px;
     margin: 20px 0px;
@@ -32,7 +29,7 @@ nav>ul{
     border: 1px groove lightgray;
     background-color: darkgray;
     list-style-type: none;
-    margin: 0px;
+    margin: opx;
 }
 
 nav>ul>li{
@@ -52,15 +49,47 @@ nav>ul>li>a:hover{
     color: lightgray;
 }
 
+#main_section{
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+#articles_section{
+    -webkit-box-flex: 1;
+    margin: 5px 0px;
+}
+
+#article{
+    border-bottom: 3px groove darkgray;
+    padding: 5px;
+}
 .lastOne{
     float: right;
 }
-
-#main_section{
-    margin: auto;
-    margin-top: 25px;
+#article:hover{
+    background-color: #c2c4c5;
 }
 
-#result{
-    margin-top: 5px;
+section footer{
+    text-align: right;
+}
+
+#news_section{
+    border-left: 1px groove darkgray;
+    width: 200px;
+    margin: 5px;
+}
+
+#news{
+    text-align: justify;
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 1px groove darkgray;
+}
+
+div>footer{
+    border-top: 1px groove darkgray;
+    text-align: center;
+    color: darkgrey;
+    padding: 10px;
 }

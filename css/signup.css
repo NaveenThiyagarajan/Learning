@@ -3,7 +3,6 @@
     padding: 0px;
     font-size: 14px;
 }
-
 h1{
     font-size: 30px;
 }
@@ -32,7 +31,7 @@ nav>ul{
     border: 1px groove lightgray;
     background-color: darkgray;
     list-style-type: none;
-    margin: 0px;
+    margin: opx;
 }
 
 nav>ul>li{
@@ -52,15 +51,46 @@ nav>ul>li>a:hover{
     color: lightgray;
 }
 
-.lastOne{
-    float: right;
-}
-
 #main_section{
-    margin: auto;
-    margin-top: 25px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
 }
 
-#result{
-    margin-top: 5px;
+#signup{
+    -webkit-box-flex: 1;
+    margin: 20px 20px;
 }
+
+input{
+    margin: 5px;
+    display: block;
+}
+#signup_button{
+    width: 150px;
+    margin: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: darkgrey;
+    height: 25px;
+}
+#signup_button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+#SignIn{
+    margin-left: 10px;
+}
+a:hover{
+    color:green;
+}
+footer{
+    border-top: 1px groove darkgrey;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
