@@ -76,10 +76,17 @@ section footer{
 
 #news_section{
     border-left: 1px groove darkgray;
+    border-right: 1px groove darkgray;
     width: 200px;
     margin: 5px;
 }
-
+#news_header{
+    text-align: center;
+    border-top: 1px groove darkgray;
+    border-bottom: 1px groove darkgray;
+    background-color: darkgrey;
+    color: #000;
+}
 #news{
     text-align: justify;
     padding: 5px;
@@ -90,6 +97,6 @@ section footer{
 div>footer{
     border-top: 1px groove darkgray;
     text-align: center;
-    color: darkgrey;
+    /* color: darkgrey; */
     padding: 10px;
 }
